@@ -1,0 +1,25 @@
+{
+  "name": "clean_ts_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adam1a2/Clean_TS_API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adam1a2/Clean_TS_API/issues"
+  },
+  "homepage": "https://github.com/Adam1a2/Clean_TS_API#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "git-commit-msg-linter": "^4.1.1",
+    "typescript": "^4.6.2"
+  }
+}
