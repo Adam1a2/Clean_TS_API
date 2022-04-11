@@ -1,6 +1,6 @@
 import { Authentication } from '../../../domain/usecases/authentication'
 import { InvalidParamError, MissingParamError } from '../../errors'
-import { badRequest, serverError } from '../../helpers/http-helper'
+import { badRequest, serverError, unauthorized } from '../../helpers/http-helper'
 import { Controller, HttpRequest, HttpResponse } from '../../protocols'
 import { EmailValidator } from '../signup/signup-protocols'
 
@@ -18,7 +18,7 @@ export class LoginController implements Controller {
       const requiredFields = ['email', 'password']
       for (const field of requiredFields) {
         if (!httpRequest.body[field]) {
-          return await new Promise(resolve => resolve(badRequest(new MissingParamError(field))))
+          return badRequest(new MissingParamError(field))
         }
         const isValid = this.emailValidator.isValid(email)
         if (!isValid) {
@@ -26,7 +26,10 @@ export class LoginController implements Controller {
         }
       }
 
-      await this.authentication.auth(email, password)
+      const accessToken = await this.authentication.auth(email, password)
+      if (!accessToken) {
+        return unauthorized()
+      }
     } catch (error) {
       return serverError(error)
     }
