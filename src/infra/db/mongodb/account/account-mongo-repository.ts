@@ -1,5 +1,4 @@
 import { ObjectId } from 'mongodb'
-import { resolve } from 'path'
 import { AddAccountRepository } from '../../../../data/protocols/db/account/add-account-repository'
 import { LoadAccountByTokenRepository } from '../../../../data/protocols/db/account/load-account-by-token-repository '
 import { LoadAccountByEmailRepository, UpdateAccessTokenRepository } from '../../../../data/usecases/authentication/db-authentication-protocols'
