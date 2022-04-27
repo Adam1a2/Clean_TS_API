@@ -24,7 +24,7 @@ export class SurveyResultMongoRepository implements SaveSurveyResultRepository{
         accountId: new ObjectId(data.accountId)
       }
     )
-    return res && MongoHelper.map(res)
+    return MongoHelper.map(res)
   }
 
   
