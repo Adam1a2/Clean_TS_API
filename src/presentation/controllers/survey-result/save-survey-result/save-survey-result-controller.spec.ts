@@ -101,7 +101,7 @@ describe('SaveSurveyResult Controller', () => {
   })
 
   test('Should return 403 if invalid answer ir provided', async() => {
-    const { sut, loadSurveyByIdStub } = makeSut()
+    const { sut } = makeSut()
     const httpResponse = await sut.handle({
       params: {
         surveyId: 'any_survey_id'
@@ -123,5 +123,12 @@ describe('SaveSurveyResult Controller', () => {
       date: new Date(),
       answer: 'any_answer'
     })
+  })
+
+  test('Should return 500 if SaveSurveyResult throws', async () => {
+    const { sut, saveSurveyResultStub } = makeSut()
+    jest.spyOn(saveSurveyResultStub, 'save').mockReturnValueOnce(new Promise((resolve, reject) => reject(new Error())))
+    const httpResponse = await sut.handle({})
+    expect(httpResponse).toEqual(serverError(new Error()))
   })
 })
