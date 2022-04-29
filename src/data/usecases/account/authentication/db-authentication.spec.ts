@@ -1,4 +1,4 @@
-import { AuthenticationModel, LoadAccountByEmailRepository, UpdateAccessTokenRepository, HashComparer, Encrypter, AccountModel, DbAuthentication } from './db-authentication-protocols'
+import { AuthenticationParams, LoadAccountByEmailRepository, UpdateAccessTokenRepository, HashComparer, Encrypter, AccountModel, DbAuthentication } from './db-authentication-protocols'
 
 describe('DbAuthentication UseCase', () => {
   const makeFakeAccount = (): AccountModel => ({
@@ -8,7 +8,7 @@ describe('DbAuthentication UseCase', () => {
     password: 'hashed_password'
   })
 
-  const makeFakeAuthentication = (): AuthenticationModel => ({
+  const makeFakeAuthentication = (): AuthenticationParams => ({
     email: 'any_email@email.com',
     password: 'any_password'
   })
