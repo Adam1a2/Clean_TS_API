@@ -5,6 +5,7 @@ export default {
     '!<rootDir>/src/main/**',
     '!<rootDir>/src/presentation/protocols/**',
     '!<rootDir>/src/**/**/*protocols.ts',
+    '!**/test/**'
   ],
   coverageDirectory: 'coverage',
   testEnvironment: 'node',
