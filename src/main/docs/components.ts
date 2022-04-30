@@ -1,4 +1,4 @@
-import { apiKeyAuthSchema } from "./schemas";
+import { apiKeyAuthSchema } from "./schemas/";
 import { badRequest, serverError, forbidden, notFound, unauthorized } from "./components/";
 
 export default {
