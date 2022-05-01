@@ -2,7 +2,7 @@ import { InvalidParamError } from "@/presentation/errors"
 import { forbidden, ok, serverError } from "@/presentation/helpers/http/http-helper"
 import { SaveSurveyResultController } from "./save-survey-result-controller"
 import { HttpRequest, LoadSurveyById, SurveyModel, SaveSurveyResult, SaveSurveyResultParams, SurveyResultModel } from "./save-survey-result-controller-protocols"
-import { mockSurveyModel, mockSurveyResultModel, throwError } from '@/domain/test'
+import { mockSurveyResultModel, throwError } from '@/domain/test'
 import MockDate from 'mockdate'
 import { mockLoadSurveyById, mockSaveSurveyResult } from "@/presentation/test"
 
