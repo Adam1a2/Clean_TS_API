@@ -2,7 +2,7 @@ import { DbSaveSurveyResult } from './db-save-survey-result'
 import { SaveSurveyResultRepository } from './db-save-survey-result-protocols'
 import { mockSaveSurveyResultParams, mockSurveyResultModel, throwError } from '@/domain/test'
 import MockDate from 'mockdate'
-import { mockSaveSurveyResultRepositoryStub, mockLoadSurveyResultRepositoryStub } from '@/data/test'
+import { mockSaveSurveyResultRepository, mockLoadSurveyResultRepository } from '@/data/test'
 import { LoadSurveyResultRepository } from '../load-survey-result/db-load-survey-result-protocols'
 
 type SutTypes = {
@@ -12,8 +12,8 @@ type SutTypes = {
 }
 
 const makeSut = (): SutTypes => {
-  const saveSurveyResultRepositoryStub = mockSaveSurveyResultRepositoryStub()
-  const loadSurveyResultRepositoryStub = mockLoadSurveyResultRepositoryStub()
+  const saveSurveyResultRepositoryStub = mockSaveSurveyResultRepository()
+  const loadSurveyResultRepositoryStub = mockLoadSurveyResultRepository()
   const sut = new DbSaveSurveyResult(saveSurveyResultRepositoryStub, loadSurveyResultRepositoryStub)
   return {
     sut,
