@@ -1,7 +1,6 @@
 # Clean_TS_API
-# Test Adam_Henrique
 
-**API para gerenciamento de Doctors**
+**API para gerenciamento de Enquetes**
 
 - [CLEAN-TYPESCRIPT-API](#CLEAN-TYPESCRIPT-API)
   - [Acesso ao Projeto pelo Heroku](#https://api-node-adam.herokuapp.com/api-docs/)
@@ -129,4 +128,4 @@ npm run test:ci
 
 O resultado dos testes são apresentados no terminal já com a informação de code coverage
 
-<img src=https://user-images.githubusercontent.com/79374233/132604052-a79cc1e2-ddbf-4a8c-a48c-9268545b63b4.png height="500">
+<img src=![Coverage](https://user-images.githubusercontent.com/79374233/166612983-37ab8675-b536-448d-9e4b-b4af2eada928.png) height="500">
