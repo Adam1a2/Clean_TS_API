@@ -112,7 +112,8 @@ Implementação de adaptadores utilizados por esses repositórios (bcrypt)
 ### Documentação
 
 Após iniciar a aplicação, a documentação de toda a api estará disponível a partir do endereço <http://localhost:5050/api-docs/#/>.
-
+Ou acesse o Online pelo link <https://api-node-adam.herokuapp.com/api-docs/>
+<>
 ### Testes
 
 Os testes foram divididos em unitários e integração a fim de garantir a maior cobertura de código no máximo de camadas possíveis. Os testes foram feitos utilzando o [Jest](https://www.npmjs.com/package/jest), [SuperTest](https://www.npmjs.com/package/supertest)
@@ -128,4 +129,4 @@ npm run test:ci
 
 O resultado dos testes são apresentados no terminal já com a informação de code coverage
 
-<img src=![Coverage](https://user-images.githubusercontent.com/79374233/166612983-37ab8675-b536-448d-9e4b-b4af2eada928.png) height="500">
+<img src=https://user-images.githubusercontent.com/79374233/166612983-37ab8675-b536-448d-9e4b-b4af2eada928.png height="500">
