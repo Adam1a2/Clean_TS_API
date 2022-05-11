@@ -19,7 +19,7 @@
 ## Acesso ao projeto pelo Heroku
 
 - Primeiramente, o deploy do projeto foi feito no [Heroku](https://www.heroku.com/) e usa o banco de dados do [MongoDbAtlas](https://www.mongodb.com/cloud) e pode ser acessado através do [Link_do_Swagger_da_Api](https://api-node-adam.herokuapp.com/api-docs/)
-- Use o email - admin@gmail.com - e a senha admin. E tera acesso de administrador no swagger.
+- Use o email - admin@gmail.com - e a senha admin - e terá acesso de administrador no swagger.
 
 ## Como usar a Api
 
